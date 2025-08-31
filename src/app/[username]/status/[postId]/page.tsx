@@ -1,5 +1,5 @@
 import Comments from "@/components/Comments";
-import Image from "@/components/Image";
+import Image from "@/components/IKImage";
 import Post from "@/components/Post";
 import Link from "next/link";
 
@@ -12,8 +12,8 @@ const StatusPage = () => {
         </Link>
         <h1 className="font-bold text-lg">Post</h1>
       </div>
-      <Post type="status"/>
-      <Comments/>
+      <Post type="status" />
+      <Comments />
     </div>
   );
 };

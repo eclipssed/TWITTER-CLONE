@@ -1,9 +1,9 @@
 import { imagekit } from "@/utils";
-import Image from "./Image";
 import PostInfo from "./PostInfo";
 import PostInteractions from "./PostInteractions";
-import Video from "./Video";
+import Video from "./IKVideo";
 import Link from "next/link";
+import IKImage from "./IKImage";
 
 interface FileDetailsResponse {
   width: number;
@@ -15,7 +15,6 @@ interface FileDetailsResponse {
 }
 
 const Post = async ({ type }: { type?: "status" | "comment" }) => {
- 
   // FETCH POST MEDIA
 
   // const getFileDetails = async (
@@ -58,7 +57,7 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
             type === "status" && "hidden"
           } relative w-10 h-10 rounded-full overflow-hidden`}
         >
-          <Image path="general/avatar.png" alt="" w={100} h={100} tr={true} />
+          <IKImage src="general/avatar.png" alt="" w={100} h={100} tr={true} />
         </div>
         {/* CONTENT */}
         <div className="flex-1 flex flex-col gap-2">
@@ -70,8 +69,8 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
                   type !== "status" && "hidden"
                 } relative w-10 h-10 rounded-full overflow-hidden`}
               >
-                <Image
-                  path="general/avatar.png"
+                <IKImage
+                  src="general/avatar.png"
                   alt=""
                   w={100}
                   h={100}
@@ -105,11 +104,11 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
               iure nam voluptas soluta pariatur inventore.
             </p>
           </Link>
-          <Image path="general/post.jpeg" alt="" w={600} h={600} />
+          <IKImage src="general/post.jpeg" alt="" w={600} h={600} />
           {/* AFTER FETCHING THE POST MEDIA */}
           {/* {fileDetails && fileDetails.fileType === "image" ? (
-            <Image
-              path={fileDetails.filePath}
+            <IKImage
+              src={fileDetails.filePath}
               alt=""
               w={fileDetails.width}
               h={fileDetails.height}
@@ -117,7 +116,7 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
             />
           ) : (
             <Video
-              path={fileDetails.filePath}
+              src={fileDetails.filePath}
               className={fileDetails.customMetadata?.sensitive ? "blur-lg" : ""}
             />
           )} */}

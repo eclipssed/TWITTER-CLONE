@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "./Image";
-import NextImage from "next/image";
+import IKImage from "./IKImage";
+import Image from "next/image";
 import { shareAction } from "@/actions";
 import ImageEditor from "./ImageEditor";
 
@@ -32,7 +32,7 @@ const Share = () => {
     >
       {/* AVATAR */}
       <div className="relative w-10 h-10 rounded-full overflow-hidden">
-        <Image path="general/avatar.png" alt="" w={100} h={100} tr={true} />
+        <IKImage src="general/avatar.png" alt="" w={100} h={100} tr={true} />
       </div>
       {/* OTHERS */}
       <div className="flex-1 flex flex-col gap-4">
@@ -45,7 +45,7 @@ const Share = () => {
         {/* PREVIEW IMAGE */}
         {media?.type.includes("image") && previewURL && (
           <div className="relative rounded-xl overflow-hidden">
-            <NextImage
+            <Image
               src={previewURL}
               alt=""
               width={600}
@@ -102,44 +102,44 @@ const Share = () => {
               accept="image/*,video/*"
             />
             <label htmlFor="file">
-              <Image
-                path="icons/image.svg"
+              <IKImage
+                src="icons/image.svg"
                 alt=""
                 w={20}
                 h={20}
                 className="cursor-pointer"
               />
             </label>
-            <Image
-              path="icons/gif.svg"
+            <IKImage
+              src="icons/gif.svg"
               alt=""
               w={20}
               h={20}
               className="cursor-pointer"
             />
-            <Image
-              path="icons/poll.svg"
+            <IKImage
+              src="icons/poll.svg"
               alt=""
               w={20}
               h={20}
               className="cursor-pointer"
             />
-            <Image
-              path="icons/emoji.svg"
+            <IKImage
+              src="icons/emoji.svg"
               alt=""
               w={20}
               h={20}
               className="cursor-pointer"
             />
-            <Image
-              path="icons/schedule.svg"
+            <IKImage
+              src="icons/schedule.svg"
               alt=""
               w={20}
               h={20}
               className="cursor-pointer"
             />
-            <Image
-              path="icons/location.svg"
+            <IKImage
+              src="icons/location.svg"
               alt=""
               w={20}
               h={20}

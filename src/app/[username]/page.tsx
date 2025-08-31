@@ -1,5 +1,5 @@
 import Feed from "@/components/Feed";
-import Image from "@/components/Image";
+import Image from "@/components/IKImage";
 import Link from "next/link";
 
 const UserPage = () => {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "./Image";
+import IKImage from "./IKImage";
 
 const PopularTags = () => {
   return (
@@ -10,8 +10,8 @@ const PopularTags = () => {
       {/* TREND EVENT */}
       <div className="flex gap-4">
         <div className="relative w-20 h-20 rounded-xl overflow-hidden">
-          <Image
-            path="general/event.png"
+          <IKImage
+            src="/general/cover.jpg"
             alt="event"
             w={120}
             h={120}
@@ -29,7 +29,7 @@ const PopularTags = () => {
       <div className="">
         <div className="flex items-center justify-between">
           <span className="text-textGray text-sm">Technology • Trending</span>
-          <Image path="icons/infoMore.svg" alt="info" w={16} h={16} />
+          <IKImage src="icons/infoMore.svg" alt="info" w={16} h={16} />
         </div>
         <h2 className="text-textGrayLight font-bold">OpenAI</h2>
         <span className="text-textGray text-sm">20K posts</span>
@@ -38,7 +38,7 @@ const PopularTags = () => {
       <div className="">
         <div className="flex items-center justify-between">
           <span className="text-textGray text-sm">Technology • Trending</span>
-          <Image path="icons/infoMore.svg" alt="info" w={16} h={16} />
+          <IKImage src="icons/infoMore.svg" alt="info" w={16} h={16} />
         </div>
         <h2 className="text-textGrayLight font-bold">OpenAI</h2>
         <span className="text-textGray text-sm">20K posts</span>
@@ -47,7 +47,7 @@ const PopularTags = () => {
       <div className="">
         <div className="flex items-center justify-between">
           <span className="text-textGray text-sm">Technology • Trending</span>
-          <Image path="icons/infoMore.svg" alt="info" w={16} h={16} />
+          <IKImage src="icons/infoMore.svg" alt="info" w={16} h={16} />
         </div>
         <h2 className="text-textGrayLight font-bold">OpenAI</h2>
         <span className="text-textGray text-sm">20K posts</span>
@@ -56,7 +56,7 @@ const PopularTags = () => {
       <div className="">
         <div className="flex items-center justify-between">
           <span className="text-textGray text-sm">Technology • Trending</span>
-          <Image path="icons/infoMore.svg" alt="info" w={16} h={16} />
+          <IKImage src="icons/infoMore.svg" alt="info" w={16} h={16} />
         </div>
         <h2 className="text-textGrayLight font-bold">OpenAI</h2>
         <span className="text-textGray text-sm">20K posts</span>

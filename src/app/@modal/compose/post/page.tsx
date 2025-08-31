@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "@/components/Image";
+import Image from "@/components/IKImage";
 import { useRouter } from "next/navigation";
 
 const PostModal = () => {
@@ -83,7 +83,9 @@ const PostModal = () => {
               className="cursor-pointer"
             />
           </div>
-          <button className="py-2 px-5 text-black bg-white rounded-full font-bold">Post</button>
+          <button className="py-2 px-5 text-black bg-white rounded-full font-bold">
+            Post
+          </button>
         </div>
       </div>
     </div>
